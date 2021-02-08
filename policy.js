@@ -79,5 +79,5 @@ deletePolicy("Alex");
 store.dispatch(createPolicy("Alex", 20));
 store.dispatch(createPolicy("Jim", 30));
 store.dispatch(createPolicy("Bob", 40));
-
+//createStore(combineReducers(...)) . dispatch(...)
 console.log(store.getState());
