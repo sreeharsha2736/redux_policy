@@ -59,7 +59,7 @@ const policies = (listOfPolicies = [], action) => {
 
   return listOfPolicies;
 };
-
+//Redux
 const { createStore, combineReducers } = Redux;
 
 const ourDepartments = combineReducers({
@@ -68,12 +68,14 @@ const ourDepartments = combineReducers({
   policies: policies,
 });
 
+//store
 const store = createStore(ourDepartments);
 
+//actions
 createPolicy("Alex", 20);
 createClaim("Alex", 120);
 deletePolicy("Alex");
-
+//store.dispatch(action)
 store.dispatch(createPolicy("Alex", 20));
 store.dispatch(createPolicy("Jim", 30));
 store.dispatch(createPolicy("Bob", 40));
